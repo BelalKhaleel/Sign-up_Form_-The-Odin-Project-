@@ -18,10 +18,7 @@
 }
 
 body {
-  /* margin: 0 15vw; */
   background-color: rgb(14, 14, 14);
-  /* display: flex; */
-  /* font-family: 'Norse Bold'; */
 }
 
 .wrapper {
@@ -84,7 +81,6 @@ main {
   width: 55ch;
   font-size: .9rem;
   letter-spacing: -.5px;
-
 }
 
 .form-section {
@@ -92,7 +88,6 @@ main {
   height: 177px;
   background-color: #fff;
   padding-left: var(--padding-left);
-
 }
 
 .form-section > span {
@@ -119,9 +114,11 @@ fieldset:last-child {
 
 fieldset label {
   display: block;
+  font-size: .4rem;
+  font-weight: bold;
 }
 
-fieldset > div > input{
+input {
   border: solid 1px var(--input-border);
   border-radius: 2px;
   padding: 2px;
@@ -129,53 +126,26 @@ fieldset > div > input{
 }
 
 input:focus {
-  border: solid blue;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;}
+  border: 1px solid blue;
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.24) 1px 2px 4px;
+}
+
+div.error-message > span {
+  display: block;
+  color: #ce6161;
+  font-size: .3rem;
+  letter-spacing: 0;
+  font-weight: bold;
+}
+
 .bottom-section {
   width: 100%;
   background-color: #f9fafb;
   flex: 1;
   padding-left: var(--padding-left);
-
 }
 
-/* main {
-  max-width: 994px;
-  /* max-width: min(80%, 780px); */
-
-  /* width: min(40ch, 100% - 2rem); */
-  /* background-color: red;
-  display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
-/* } */
-
-/* .left-container {
-  width: 37%;
-  background-color: green;
+.hidden {
+  display: none;
 }
-
-.right-container {
-  width: 60%;
-  background-color: aliceblue;
-}
-
-.bg-image {
-  position: relative;
-  color: white;
-}
-
-div.logo-container {
-  width: 100%;
-  text-align: center; */
-  /* position: absolute;
-  top: 200px; */
-  /* background-color: rgba(6, 6, 6, 0.38);
-} */
-
-/* .bg-image > span {
-  position: absolute;
-  bottom: 200px;
-} */ 
